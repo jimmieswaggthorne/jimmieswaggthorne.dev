@@ -56,8 +56,22 @@ export default function ContactPage() {
         <p className="kicker">Contact</p>
         <h1>Start a project conversation</h1>
         <p className="lead" style={{ marginBottom: '1rem' }}>
-          Share your scope, timeline, and what success looks like. This site uses a form-first
-          contact flow so no personal phone number, address, or direct email is published.
+          Share your scope, timeline, and what success looks like. You can use the form or reach
+          out directly through email, GitHub, or LinkedIn.
+        </p>
+        <p className="muted" style={{ marginTop: 0, marginBottom: '1.25rem' }}>
+          <a href="mailto:jimmieswaggthorne@gmail.com">jimmieswaggthorne@gmail.com</a> |{' '}
+          <a href="https://github.com/jimmieswaggthorne" target="_blank" rel="noreferrer noopener">
+            GitHub
+          </a>{' '}
+          |{' '}
+          <a
+            href="https://linkedin.com/in/jimmie-swaggthorne"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            LinkedIn
+          </a>
         </p>
 
         {status === 'ok' && <p className="status status-ok">{message}</p>}
