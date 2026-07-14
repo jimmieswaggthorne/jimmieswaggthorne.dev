@@ -1,66 +1,128 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import JsonLd from '@/components/json-ld'
+import { absoluteUrl, buildMetadata, jsonLdGraph, SITE_URL } from '@/lib/seo'
 
-export default function Home() {
+export const metadata: Metadata = buildMetadata({
+  title: 'Home',
+  description:
+    'Portfolio-first contract website for Jimmie Swaggthorne: full-stack product engineering, multi-CMS implementation, accessibility leadership, and production-focused delivery.',
+  path: '/',
+  keywords: [
+    'jimmieswaggthorne.dev',
+    'Jimmie Swaggthorne portfolio',
+    'contract engineering',
+    'full stack contract engineer',
+    'multi CMS developer',
+    'accessibility focused frontend',
+  ],
+})
+
+const strengths = [
+  'Full-stack product delivery with Next.js and modern APIs',
+  'Accessibility remediation and inclusive UX',
+  'Technical SEO architecture and schema',
+  'Multiple CMS platforms including WordPress, Shopify, and headless setups',
+  'Creative CSS systems and polished UI implementation',
+  'Cross-functional collaboration with product teams',
+]
+
+const highlights = [
+  'Started coding in middle school and beat upper class students in a timed HTML/CSS competition by the end of sixth grade.',
+  'A product of the MySpace era with a deep love for CSS craft and expressive interfaces.',
+  'Passionate about expanding accessibility and building cool products through true team collaboration.',
+  'Entrepreneurial background plus interdisciplinary artist perspective that helps me solve technical problems creatively.',
+]
+
+export default function HomePage() {
+  const structuredData = jsonLdGraph(
+    {
+      '@type': 'Person',
+      '@id': `${SITE_URL}/#person`,
+      name: 'Jimmie Swaggthorne',
+      url: SITE_URL,
+      jobTitle: 'Contract Software Engineer',
+      description:
+        'Contract full-stack software engineer and creative technologist focused on accessible, portfolio-grade web products and CMS-aware platform delivery.',
+      knowsAbout: [
+        'Next.js',
+        'React',
+        'Full-stack development',
+        'CMS implementation',
+        'Accessibility',
+        'Technical SEO',
+        'CSS Architecture',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: 'jimmieswaggthorne.dev',
+      inLanguage: 'en-US',
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${absoluteUrl('/')}#webpage`,
+      url: absoluteUrl('/'),
+      name: 'Home | Jimmie Swaggthorne',
+      about: { '@id': `${SITE_URL}/#person` },
+    },
+  )
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <JsonLd data={structuredData} />
+
+      <section className="hero">
+        <div className="shell hero-panel">
+          <p className="kicker">Portfolio and Contract Site</p>
+          <h1>Jimmie Swaggthorne</h1>
+          <p className="lead">
+            I help teams ship product work faster with full-stack systems that are expressive,
+            accessible, and built to perform. I am also experienced across multiple CMS platforms,
+            so content teams can move quickly without losing implementation quality. This site is
+            intentionally portfolio-first: the work, craft, and outcomes lead the story.
           </p>
+          <div className="cta-row">
+            <Link href="/portfolio" className="btn btn-primary">
+              Explore portfolio profile
+            </Link>
+            <Link href="/work" className="btn btn-ghost">
+              Browse selected work
+            </Link>
+            <Link href="/contact" className="btn btn-ghost">
+              Start a contract conversation
+            </Link>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="section section-alt">
+        <div className="shell">
+          <h2>Core strengths</h2>
+          <div className="chip-list">
+            {strengths.map((item) => (
+              <span className="chip" key={item}>
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      <section className="section">
+        <div className="shell">
+          <h2>The human side of the technical work</h2>
+          <div className="grid grid-3">
+            {highlights.map((item) => (
+              <article className="card" key={item}>
+                <p>{item}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  )
 }
