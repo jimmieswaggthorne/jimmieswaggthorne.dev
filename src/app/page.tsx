@@ -28,10 +28,10 @@ const strengths = [
 ]
 
 const highlights = [
-  'Started coding in middle school and beat upper class students in a timed HTML/CSS competition by the end of sixth grade.',
-  'A product of the MySpace era with a deep love for CSS craft and expressive interfaces.',
-  'Passionate about expanding accessibility and building cool products through true team collaboration.',
-  'Entrepreneurial background plus interdisciplinary artist perspective that helps me solve technical problems creatively.',
+  'I started coding in middle school and, by sixth grade, outperformed older students in a timed HTML/CSS competition.',
+  'Raised in the MySpace era, I bring a long-standing appreciation for CSS craftsmanship and expressive interface design.',
+  'I care deeply about advancing accessibility and building meaningful products through real collaboration.',
+  'My entrepreneurial experience and interdisciplinary artist lens help me approach technical challenges with creativity.',
 ]
 
 const techAndCms = [
