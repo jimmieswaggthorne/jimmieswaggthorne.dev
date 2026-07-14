@@ -5,21 +5,26 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata: Metadata = buildMetadata({
   title: 'Services',
   description:
-    'Contract service offerings by Jimmie Swaggthorne: product engineering, web platform delivery, technical SEO implementation, and accessibility remediation.',
+    'Contract service offerings by Jimmie Swaggthorne: full-stack product engineering, multi-CMS delivery, technical SEO implementation, and accessibility remediation.',
   path: '/services',
-  keywords: ['contract engineering services', 'accessibility consultant developer', 'technical SEO implementation'],
+  keywords: [
+    'full stack contract engineering services',
+    'multi CMS implementation services',
+    'accessibility consultant developer',
+    'technical SEO implementation',
+  ],
 })
 
 const services = [
   {
     title: 'Contract Product Engineering',
     detail:
-      'Feature delivery, refactoring strategy, integration work, and team-oriented implementation for active products.',
+      'Full-stack feature delivery, refactoring strategy, integration work, and team-oriented implementation for active products.',
   },
   {
-    title: 'Portfolio and Marketing Websites',
+    title: 'Portfolio, Marketing, and CMS Websites',
     detail:
-      'Custom website builds with strong messaging structure, conversion-aware UX, and long-term maintainability.',
+      'Custom website and CMS builds with strong messaging structure, conversion-aware UX, and long-term maintainability.',
   },
   {
     title: 'Accessibility and Frontend QA',
@@ -41,7 +46,8 @@ export default function ServicesPage() {
         <h1>Built for teams that need momentum</h1>
         <p className="lead">
           I focus on work that drives outcomes quickly while still leaving clean foundations behind.
-          Engagements are scoped with practical milestones and direct communication.
+          Engagements blend full-stack execution with CMS-aware implementation, scoped through
+          practical milestones and direct communication.
         </p>
 
         <div className="section grid grid-3">

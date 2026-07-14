@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMetadata({
     'contract engineering',
     'full stack contract engineer',
     'multi CMS developer',
-    'accessibility focused frontend',
+    'accessibility focused engineering',
   ],
 })
 
@@ -32,6 +32,24 @@ const highlights = [
   'A product of the MySpace era with a deep love for CSS craft and expressive interfaces.',
   'Passionate about expanding accessibility and building cool products through true team collaboration.',
   'Entrepreneurial background plus interdisciplinary artist perspective that helps me solve technical problems creatively.',
+]
+
+const techAndCms = [
+  {
+    title: 'Product Stack Delivery',
+    detail:
+      'Next.js, React, TypeScript, and API-backed feature work with practical release planning and maintainable architecture.',
+  },
+  {
+    title: 'CMS Implementation',
+    detail:
+      'WordPress, Shopify, and headless CMS workflows built for editor usability, clean content modeling, and reliable publishing.',
+  },
+  {
+    title: 'Platform Integrations',
+    detail:
+      'Schema, analytics, search, and marketing platform integrations connected to product UX without slowing down teams.',
+  },
 ]
 
 export default function HomePage() {
@@ -106,6 +124,24 @@ export default function HomePage() {
               <span className="chip" key={item}>
                 {item}
               </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="shell">
+          <h2>Tech + CMS toolkit</h2>
+          <p className="lead">
+            Full-stack implementation and CMS delivery are part of the same system for me. I build
+            the engineering layer and the publishing layer to work together.
+          </p>
+          <div className="section grid grid-3">
+            {techAndCms.map((item) => (
+              <article className="card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p className="muted">{item.detail}</p>
+              </article>
             ))}
           </div>
         </div>

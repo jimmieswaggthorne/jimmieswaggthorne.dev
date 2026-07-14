@@ -2,13 +2,13 @@
   --bg: #f5f7fc;
   --paper: #ffffff;
   --ink: #141826;
-  --muted: #3f475d;
+  --muted: #2f3750;
   --line: #ccd3e6;
-  --accent: #0f766e;
-  --accent-strong: #0b5953;
+  --accent: #0d6a63;
+  --accent-strong: #084e49;
   --accent-soft: #dbf2ef;
-  --violet: #5a3ea2;
-  --violet-strong: #452d84;
+  --violet: #53399a;
+  --violet-strong: #3f2a78;
   --violet-soft: #ece7fb;
   --radius: 18px;
 }
@@ -76,6 +76,8 @@ a {
 
 .nav-links a:hover {
   color: var(--violet-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .hero {
@@ -217,6 +219,12 @@ select:focus-visible {
   border-top: 1px solid var(--line);
   margin-top: 3rem;
   background: color-mix(in srgb, var(--violet-soft) 28%, var(--paper));
+}
+
+.footer-links a:hover {
+  color: var(--violet-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .footer-grid {

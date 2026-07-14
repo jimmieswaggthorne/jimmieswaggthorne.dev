@@ -10,8 +10,8 @@ export const metadata: Metadata = buildMetadata({
   path: '/portfolio',
   keywords: [
     'Jimmie Swaggthorne portfolio',
-    'contract frontend engineer profile',
-    'accessibility and CSS specialist',
+    'contract full stack engineer profile',
+    'multi CMS and accessibility specialist',
   ],
 })
 
@@ -20,7 +20,7 @@ const timeline = [
     period: '2025 - 2026',
     role: 'Independent Contract Engineer',
     detail:
-      'Delivered component systems, launch support, and accessibility-focused frontend work for active client products.',
+      'Delivered full-stack feature work, launch support, and accessibility-focused implementation for active client products.',
   },
   {
     period: '2019 - 2026',

@@ -7,7 +7,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Selected project work by Jimmie Swaggthorne across product interfaces, CMS ecosystems, and full-stack delivery.',
   path: '/work',
-  keywords: ['frontend portfolio projects', 'Next.js work samples', 'contract engineering case studies'],
+  keywords: ['full stack portfolio projects', 'Next.js work samples', 'CMS engineering case studies'],
 })
 
 const projects = [
@@ -44,8 +44,9 @@ export default function WorkPage() {
         <p className="kicker">Selected Work</p>
         <h1>Case-study style snapshots</h1>
         <p className="lead">
-          This page highlights representative project categories and outcomes. I can walk through
-          deeper examples during discovery calls based on your needs.
+          This page highlights representative project categories and outcomes across full-stack
+          systems and CMS-powered delivery. I can walk through deeper examples during discovery
+          calls based on your needs.
         </p>
 
         <div className="section grid grid-3">
