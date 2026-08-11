@@ -22,6 +22,18 @@ const services = [
       'Full-stack feature delivery, refactoring strategy, integration work, and team-oriented implementation for active products.',
   },
   {
+    title: 'WordPress (themes, ACF, Gutenberg)',
+    detail:
+      'I can own custom themes, ACF field models, custom post types, Gutenberg blocks, and plugins — editor-friendly builds with maintainable architecture.',
+    href: '/wordpress',
+  },
+  {
+    title: 'WP Engine Headless + Next.js',
+    detail:
+      'I ship decoupled WordPress on Atlas with a Next.js App Router frontend, WPGraphQL, preview, and ISR — as a contractor or embedded engineer.',
+    href: '/headless',
+  },
+  {
     title: 'Portfolio, Marketing, and CMS Websites',
     detail:
       'Custom website and CMS builds with strong messaging structure, conversion-aware UX, and long-term maintainability.',
@@ -55,6 +67,13 @@ export default function ServicesPage() {
             <article key={service.title} className="card">
               <h3>{service.title}</h3>
               <p className="muted">{service.detail}</p>
+              {'href' in service && service.href ? (
+                <p style={{ marginBlockStart: '0.75rem' }}>
+                  <Link href={service.href} style={{ textDecoration: 'underline' }}>
+                    Learn more
+                  </Link>
+                </p>
+              ) : null}
             </article>
           ))}
         </div>

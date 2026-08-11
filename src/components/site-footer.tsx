@@ -15,6 +15,8 @@ export default function SiteFooter() {
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/work">Work</Link>
           <Link href="/services">Services</Link>
+          <Link href="/wordpress">WordPress</Link>
+          <Link href="/headless">Headless WP</Link>
           <Link href="/contact">Contact</Link>
           <a href="mailto:jimmieswaggthorne@gmail.com">jimmieswaggthorne@gmail.com</a>
           <a href="https://github.com/jimmieswaggthorne" target="_blank" rel="noreferrer noopener">

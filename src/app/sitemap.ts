@@ -8,6 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${SITE_URL}/portfolio`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
         { url: `${SITE_URL}/work`, lastModified: now, changeFrequency: 'weekly', priority: 0.85 },
         { url: `${SITE_URL}/services`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
+        { url: `${SITE_URL}/wordpress`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${SITE_URL}/headless`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
         { url: `${SITE_URL}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     ]
 }

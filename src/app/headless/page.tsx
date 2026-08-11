@@ -123,16 +123,20 @@ export default function HeadlessPage() {
                     </p>
                     <p className="muted" style={{ marginBlockStart: '0.75rem' }}>
                         I have hands-on experience architecting, building, and shipping on this stack — from
-                        initial scaffolding through to launch and ongoing delivery.
+                        initial scaffolding through launch — and I am looking for contract or full-time
+                        opportunities where that experience helps a product or marketing team move faster.
                     </p>
                 </div>
 
                 <div className="cta-row">
                     <Link href="/contact" className="btn btn-primary">
-                        Start a headless project
+                        Talk about a contract or role
                     </Link>
-                    <Link href="/services" className="btn btn-secondary">
-                        View all services
+                    <Link href="/wordpress" className="btn btn-ghost">
+                        Classic WordPress skills
+                    </Link>
+                    <Link href="/portfolio" className="btn btn-ghost">
+                        View portfolio
                     </Link>
                 </div>
             </div>
