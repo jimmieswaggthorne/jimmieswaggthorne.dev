@@ -1,0 +1,23 @@
+---
+description: Never use em dashes in user-facing copy
+alwaysApply: true
+---
+
+# Copy style: no em dashes
+
+Never use an em dash (`—`) in user-facing copy. That includes page body text, headings, metadata descriptions, structured data strings, alt text, and UI labels.
+
+Use a comma, colon, period, or a short rewrite instead.
+
+```text
+❌ multiple CMS platforms — including WordPress and WP Engine — so teams can move quickly
+✅ multiple CMS platforms, including WordPress and WP Engine, so teams can move quickly
+
+❌ for a reason — editorial workflows, plugins, and familiarity
+✅ for a reason: editorial workflows, plugins, and familiarity
+
+❌ as a contractor or team hire — themes, plugins, and ACF
+✅ as a contractor or team hire: themes, plugins, and ACF
+```
+
+Do not substitute an en dash (`–`) or `--` for the same pause. Rewrite the sentence so it reads cleanly without a dash.
