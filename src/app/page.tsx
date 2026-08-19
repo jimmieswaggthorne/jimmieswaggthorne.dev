@@ -6,23 +6,24 @@ import { absoluteUrl, buildMetadata, jsonLdGraph, SITE_URL } from '@/lib/seo'
 export const metadata: Metadata = buildMetadata({
   title: 'Home',
   description:
-    'Portfolio-first contract website for Jimmie Swaggthorne: full-stack product engineering, multi-CMS implementation, accessibility leadership, and production-focused delivery.',
+    'Portfolio-first contract website for Jimmie Swaggthorne: full-stack Next.js and React product engineering, multi-CMS implementation, accessibility leadership, and production-focused delivery.',
   path: '/',
   keywords: [
     'jimmieswaggthorne.dev',
     'Jimmie Swaggthorne portfolio',
     'contract engineering',
     'full stack contract engineer',
+    'Next.js React developer',
     'multi CMS developer',
     'accessibility focused engineering',
   ],
 })
 
 const strengths = [
-  'Full-stack product delivery with Next.js and modern APIs',
+  'Full-stack product delivery with Next.js and React',
   'Accessibility remediation and inclusive UX',
   'Technical SEO architecture and schema',
-  'Multiple CMS platforms including WordPress, Shopify, and headless setups',
+  'Multiple CMS platforms including WordPress, WP Engine, Shopify, and headless setups',
   'Creative CSS systems and polished UI implementation',
   'Cross-functional collaboration with product teams',
 ]
@@ -61,13 +62,15 @@ export default function HomePage() {
       url: SITE_URL,
       jobTitle: 'Contract Software Engineer',
       description:
-        'Contract full-stack software engineer and creative technologist focused on accessible, portfolio-grade web products and CMS-aware platform delivery.',
+        'Contract full-stack software engineer focused on Next.js, React, accessible web products, and CMS-aware platform delivery including WordPress and WP Engine.',
       knowsAbout: [
         'Next.js',
         'React',
         'Full-stack development',
-        'CMS implementation',
         'Accessibility',
+        'WordPress',
+        'WP Engine',
+        'CMS implementation',
         'Technical SEO',
         'CSS Architecture',
       ],
@@ -97,10 +100,11 @@ export default function HomePage() {
           <p className="kicker">Portfolio and Contract Site</p>
           <h1>Jimmie Swaggthorne</h1>
           <p className="lead">
-            I help teams ship product work faster with full-stack systems that are expressive,
-            accessible, and built to perform. I am also experienced across multiple CMS platforms,
-            so content teams can move quickly without losing implementation quality. This site is
-            intentionally portfolio-first: the work, craft, and outcomes lead the story.
+            I help teams ship product work faster with full-stack Next.js and React systems that
+            are expressive, accessible, and built to perform. I am also experienced across
+            multiple CMS platforms, including WordPress and WP Engine, so content teams can
+            move quickly without losing implementation quality. This site is intentionally
+            portfolio-first: the work, craft, and outcomes lead the story.
           </p>
           <div className="cta-row">
             <Link href="/portfolio" className="btn btn-primary">

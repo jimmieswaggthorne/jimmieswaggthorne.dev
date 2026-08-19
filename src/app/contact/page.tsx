@@ -5,8 +5,9 @@ export default function ContactPage() {
         <p className="kicker">Contact</p>
         <h1>Get in touch</h1>
         <p className="lead" style={{ marginBottom: '1rem' }}>
-          If you are building something ambitious and need a full-stack partner, reach out anytime.
-          The fastest path is email: <a href="mailto:jimmieswaggthorne@gmail.com">jimmieswaggthorne@gmail.com</a>.
+          If you are building something ambitious and need a full-stack Next.js and React
+          partner with accessibility-first delivery, reach out anytime. The fastest path is
+          email: <a href="mailto:jimmieswaggthorne@gmail.com">jimmieswaggthorne@gmail.com</a>.
         </p>
 
         <p className="muted" style={{ marginBottom: '0.75rem' }}>

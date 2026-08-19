@@ -6,7 +6,7 @@ import { absoluteUrl, buildMetadata, jsonLdGraph, SITE_URL } from '@/lib/seo'
 export const metadata: Metadata = buildMetadata({
     title: 'WP Engine Headless + Next.js',
     description:
-        'Full-stack headless WordPress development with WP Engine Atlas and Next.js — combining a battle-tested CMS backend with a blazing-fast React frontend.',
+        'Full-stack headless WordPress development with WP Engine Atlas and Next.js, combining a battle-tested CMS backend with a blazing-fast React frontend.',
     path: '/headless',
     keywords: [
         'WP Engine headless WordPress',
@@ -27,7 +27,7 @@ const advantages = [
     {
         title: 'App Router + WPGraphQL',
         detail:
-            'Server Components fetch content directly from WPGraphQL at build or request time — no client bundle bloat, no content waterfalls.',
+            'Server Components fetch content directly from WPGraphQL at build or request time, with no client bundle bloat and no content waterfalls.',
     },
     {
         title: 'WP Engine Atlas hosting',
@@ -47,7 +47,7 @@ const advantages = [
     {
         title: 'Preview mode and draft content',
         detail:
-            'Authenticated preview routes surface unpublished WordPress drafts inside the live Next.js app — safe, linkable, and easy to share with stakeholders.',
+            'Authenticated preview routes surface unpublished WordPress drafts inside the live Next.js app: safe, linkable, and easy to share with stakeholders.',
     },
 ]
 
@@ -74,7 +74,7 @@ export default function HeadlessPage() {
             name: 'Jimmie Swaggthorne',
         },
         description:
-            'Full-stack headless WordPress development pairing WP Engine Atlas with a Next.js App Router frontend — content managed in WordPress, delivered at edge speed.',
+            'Full-stack headless WordPress development pairing WP Engine Atlas with a Next.js App Router frontend. Content is managed in WordPress and delivered at edge speed.',
         serviceType: 'Headless CMS Development',
     })
 
@@ -85,7 +85,7 @@ export default function HeadlessPage() {
                 <p className="kicker">Headless Stack</p>
                 <h1>WP Engine Headless + Next.js</h1>
                 <p className="lead">
-                    WordPress is the world&apos;s most-used CMS for a reason — editorial workflows,
+                    WordPress is the world&apos;s most-used CMS for a reason: editorial workflows,
                     plugin ecosystem, and familiarity. Pairing it with a Next.js frontend gives you both:
                     content teams stay productive in an interface they know, while the site gets the
                     performance, flexibility, and developer experience of a modern React app.
@@ -122,8 +122,8 @@ export default function HeadlessPage() {
                         of wiring two separate platforms together.
                     </p>
                     <p className="muted" style={{ marginBlockStart: '0.75rem' }}>
-                        I have hands-on experience architecting, building, and shipping on this stack — from
-                        initial scaffolding through launch — and I am looking for contract or full-time
+                        I have hands-on experience architecting, building, and shipping on this stack, from
+                        initial scaffolding through launch, and I am looking for contract or full-time
                         opportunities where that experience helps a product or marketing team move faster.
                     </p>
                 </div>

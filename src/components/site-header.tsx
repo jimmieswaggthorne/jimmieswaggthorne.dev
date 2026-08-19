@@ -5,8 +5,6 @@ const nav = [
   { href: '/portfolio', label: 'Portfolio' },
   { href: '/work', label: 'Work' },
   { href: '/services', label: 'Services' },
-  { href: '/wordpress', label: 'WordPress' },
-  { href: '/headless', label: 'Headless WP' },
   { href: '/contact', label: 'Contact' },
 ]
 

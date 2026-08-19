@@ -4,10 +4,12 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata: Metadata = buildMetadata({
   title: 'Contact',
   description:
-    'Contact Jimmie Swaggthorne directly by email for full-stack web development inquiries and project discussions.',
+    'Contact Jimmie Swaggthorne for full-stack Next.js and React development, accessibility-focused delivery, and project discussions.',
   path: '/contact',
   keywords: [
     'contact full-stack web developer',
+    'hire Next.js React developer',
+    'accessibility engineer contact',
     'email web developer',
     'hire Jimmie Swaggthorne',
   ],

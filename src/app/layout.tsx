@@ -19,18 +19,19 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Jimmie Swaggthorne | Portfolio and Contract Engineering',
+    default: 'Jimmie Swaggthorne | Full-Stack Next.js, React & Accessibility',
     template: '%s | Jimmie Swaggthorne',
   },
   description:
-    'Portfolio-first contract website for Jimmie Swaggthorne: full-stack engineering, multi-CMS delivery, accessibility-forward implementation, and conversion-minded web experiences.',
+    'Portfolio-first contract website for Jimmie Swaggthorne: full-stack Next.js and React engineering, accessibility-forward implementation, multi-CMS delivery, and conversion-minded web experiences.',
   keywords: [
     'Jimmie Swaggthorne',
     'contract software engineer',
     'full stack developer for hire',
-    'CMS implementation specialist',
     'Next.js developer for hire',
+    'React developer for hire',
     'accessibility frontend engineer',
+    'CMS implementation specialist',
     'portfolio website developer',
     'technical SEO engineer',
   ],
